@@ -1,0 +1,34 @@
+#include <iostream>
+
+using namespace std;
+int main()
+{
+    //variables de hora inicial
+    int Horas1,Minutos1,Segundos1;
+    //Variables de hora final
+    int Horas2,Minutos2,Segundos2;
+    // variables para el resultado
+    int total1,total2,diferencia ;
+    int Horas,Minutos,Segundos ;
+    cout<<"Ingrese la hora inicial ( HH,MM,SS )"<<endl;
+    cin>>Horas1;
+    cin>>Minutos1;
+    cin>>Segundos1;
+    cout<<"Ingrese la hora final (HH,MM,SS)"<<endl;
+    cin>>Horas2;
+    cin>>Minutos2;
+    cin>>Segundos2;
+    //conversion de las ambas horas a segundos
+    total1= Horas1*3600+Minutos1*60 + Segundos1;
+    total2= Horas2*3600+Minutos2*60 + Segundos2;
+    // la diferencia
+    diferencia= total1 - total2;
+    //conversiom diferencia a h , m , s
+    Horas= diferencia/3600;
+    diferencia= diferencia % 60;
+    Minutos= diferencia/60;
+    Segundos= diferencia%60;
+    cout<<"La diferencia es :"<<Horas<<":"<<Minutos<<":"<<Segundos<<":"<<endl;
+    
+    return 0;
+}
