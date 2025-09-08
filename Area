@@ -1,0 +1,27 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main()
+{
+    int opcion ;
+    float a, b, lado, A, radio, r;
+    do {
+    cout<< "Menu"<<endl;
+    cout<< "1. Area del triangulo"<<endl;
+    cout<< "2. Area del cuadrado"<<endl;
+    cout<< "3. Area de la circunferemncia"<<endl;
+    cout<< "4. salir"<<endl;
+    cout<< "Ingrese una opcion"<<endl;
+    cin>> opcion;
+    switch (opcion) {
+        case 1:
+            cout<< "Ingrese la base: ";                                                                 
+            cin>> b;
+            cout<< " Ingrese la altura: ";
+            cin>> a;
+            A = (b * a) / 2;
+            cout<< "El area es: "<<A<<endl;
+            break;
+        case 2:
+            cout<< "Ingrese el lado: ";
+            cin>…
