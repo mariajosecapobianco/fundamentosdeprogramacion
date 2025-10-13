@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+float PU, CP,PD, Total;
+do {
+    cout<<"Ingrese el precio unitario: ";
+    cin>> PU;
+   } while (PU<=0);
+do{
+    cout<<"Ingrese cantidad pedida: ";
+    cin>>CP;
+  } while(CP<=0);
+  do {
+     cout<<"Ingrese el descuento: ";
+     cin>>PD;
+  } while(PD<0) ;
+    int  Subtotal=PU*CP;
+    if (PD>0) {
+    PD=(Subtotal*PD)/100;
+    Total=Subtotal-PD;
+    cout<<"El subtotal es: "<<Subtotal<<endl;
+    cout<<"El descuento es: "<<PD<<endl;
+    cout<<"El total es: "<<Total<<endl;
+    } else 
+    cout<<"El mono a pagar es: "<<Subtotal<<endl;
+    return 0;
+    }
